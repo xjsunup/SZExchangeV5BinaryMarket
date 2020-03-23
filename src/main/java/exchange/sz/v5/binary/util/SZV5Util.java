@@ -1,7 +1,6 @@
 package exchange.sz.v5.binary.util;
 
 import exchange.sz.v5.binary.enums.SZV5MsgType;
-import com.kafang.exchange.model.message.*;
 import exchange.sz.v5.binary.model.message.*;
 import io.netty.channel.Channel;
 

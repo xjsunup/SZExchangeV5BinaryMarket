@@ -1,6 +1,5 @@
 package exchange.sz.v5.binary.model.message;
 
-import com.kafang.exchange.model.field.*;
 import exchange.sz.v5.binary.model.field.*;
 import io.netty.buffer.ByteBuf;
 import lombok.Data;

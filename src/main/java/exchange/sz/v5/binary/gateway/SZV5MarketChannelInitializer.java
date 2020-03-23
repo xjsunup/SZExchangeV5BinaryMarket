@@ -1,7 +1,6 @@
 package exchange.sz.v5.binary.gateway;
 
 import exchange.sz.v5.binary.config.SZExchangeConfigure;
-import com.kafang.exchange.gateway.pipline.*;
 import exchange.sz.v5.binary.gateway.pipline.*;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelInitializer;
