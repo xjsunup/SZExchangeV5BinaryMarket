@@ -13,12 +13,6 @@ import java.util.concurrent.CountDownLatch;
 public class Application {
 
     public static void main(String[] args) throws InterruptedException {
-//        new NioServer(33313).run();
-//        Thread.sleep(3000);
-//        NioClient client = new NioClient("101.227.110.117", 12867);
-//        client.start();
-//        client.logon("","Kafang","YFF_Send",5,"1.03");
-
 
         SZExchangeConfigure configure = new SZExchangeConfigure();
         configure.setReconnect(5);
