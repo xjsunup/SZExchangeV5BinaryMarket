@@ -8,7 +8,6 @@ import lombok.ToString;
  * @author xuejian.sun
  * @date 2019/12/9 16:01
  */
-@ToString
 @NoArgsConstructor
 public class MDStreamId extends StringField {
 
