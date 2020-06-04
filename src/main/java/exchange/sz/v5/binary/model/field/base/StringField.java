@@ -11,7 +11,6 @@ import java.nio.charset.StandardCharsets;
  * @author xuejian.sun
  * @date 2019/12/4 17:26
  */
-@ToString
 public class StringField implements Field {
 
     private int byteSize;
@@ -36,6 +35,11 @@ public class StringField implements Field {
 
     @Override
     public void resumeFrom(byte[] bytes) {
-        value = new String(bytes,StandardCharsets.UTF_8).trim();
+        value = new String(bytes, StandardCharsets.UTF_8).trim();
+    }
+
+    @Override
+    public String toString() {
+        return value;
     }
 }

@@ -7,6 +7,8 @@ import exchange.sz.v5.binary.model.field.NoMDEntries;
 import exchange.sz.v5.binary.model.field.NoOrders;
 import io.netty.buffer.ByteBuf;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 import java.nio.charset.StandardCharsets;
 import java.util.LinkedList;
@@ -17,6 +19,8 @@ import java.util.List;
  * @date 2019/12/10 10:29
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
+@ToString(callSuper = true)
 public class SZV5Level1MarketSnapshot extends SZV5MarketSnapshot {
 
     private List<Double> offerPrices = new LinkedList<>();

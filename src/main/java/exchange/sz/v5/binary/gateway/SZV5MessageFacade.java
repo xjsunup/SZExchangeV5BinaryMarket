@@ -74,17 +74,20 @@ public class SZV5MessageFacade implements SZV5Gateway {
     @SZV5Message(msgType = SZV5MsgType.LEVEL1)
     @Override
     public void onLevel1Market(SZV5Level1MarketSnapshot level1MarketSnapshot) {
-        log.info("level1 -> {}", level1MarketSnapshot);
+        String securityId = level1MarketSnapshot.getSecurityId().getValue();
+        if(securityId.equals("100303") || securityId.equals("100504")){
+            log.info("level1 -> {}", level1MarketSnapshot);
+        }
     }
 
     @Slf4j
     private static class Invoker {
 
-        private Method method;
+        private final Method method;
 
-        private Object target;
+        private final Object target;
 
-        private Class<?> parameterType;
+        private final Class<?> parameterType;
 
         private Invoker(Method method, Object target) {
             this.method = method;

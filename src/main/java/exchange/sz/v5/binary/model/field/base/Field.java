@@ -15,7 +15,6 @@ public interface Field<T> {
     /**
      * 从字节中读取
      * @param bytes 字节数据
-     * @return obj
      */
      void resumeFrom(byte[] bytes);
 }
