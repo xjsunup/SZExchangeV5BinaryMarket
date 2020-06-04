@@ -85,7 +85,7 @@ public class SZV5MarketBootstrap {
      * @param exitSystem 重连到达指定次数后，依旧没有连上，是否退出系统
      * @param logError   是否打印重连过程中的错误信息
      */
-    public void reconnect(boolean exitSystem, boolean logError) {
+    public synchronized void reconnect(boolean exitSystem, boolean logError) {
         disconnect();
         int reconnect = config.getReconnect();
         if(config.getReconnect() == 0) {
@@ -159,7 +159,7 @@ public class SZV5MarketBootstrap {
         }
     }
 
-    public void disconnect() {
+    public synchronized void disconnect() {
         if(channel != null && channel.isActive()) {
             channel.close();
         }
