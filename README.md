@@ -21,7 +21,7 @@
 
 ## quickstart
 
-在该类中填写测试环境地址账号等,即可接收到行情, 需要测试环境请加QQ: 785272464
+在该类中填写测试环境地址账号等,即可接收到行情
 
 ```java
 public class Application {
